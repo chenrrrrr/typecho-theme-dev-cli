@@ -1,0 +1,47 @@
+/* 全局样式 */
+
+@import "./variable";
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  font-size: 14px;
+  color: @grey;
+  line-height: 1.15;
+  font-family: Ubuntu, Roboto, "Open Sans", "Microsoft YaHei", sans-serif;
+}
+
+input {
+  border: 0;
+  outline: none;
+  padding: 0;
+}
+
+.frosted {
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(15px);
+}
+
+.shadow {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.search-group {
+  form,
+  input {
+    border-radius: 20px;
+  }
+  form {
+    display: inline-block;
+    input {
+      padding: 5px 10px;
+      font-size: 14px;
+      color: @grey;
+    }
+  }
+}
